@@ -10,6 +10,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts/product-
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { SliderComponent } from './slider/slider/slider.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    NavigationComponent
+    NavigationComponent,
+    SliderComponent
   ],
   bootstrap: [
     AppComponent

@@ -12,15 +12,11 @@ export class ProductListComponent {
   products = products;
 
   share() {
-    window.alert('The product has been shared!');
-  }
-
-  onNotify() {
-    window.alert('You will be notified when the product goes on sale');
+    window.alert('Товар добавлен в избранное!');
   }
 
   addToCart(product: Product) {
     this.cartService.addToCard(product);
-    window.alert('Your product has been added to the cart!');
+    window.alert('Добавлен в корзину!');
   }
 }

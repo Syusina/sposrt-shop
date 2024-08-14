@@ -8,20 +8,30 @@ export interface Product {
   export const products = [
     {
       id: 1,
-      name: 'Phone XL',
-      price: 799,
-      description: 'A large phone with one of the best screens'
+      name: 'LIB TECH',
+      price: 34392,
+      description: 'Мужской Сноуборд',
+      image: './assets/prod1.png'
     },
     {
       id: 2,
-      name: 'Phone Mini',
-      price: 699,
-      description: 'A great phone with one of the best cameras'
+      name: 'LIB TECH',
+      price: 17392,
+      description: 'Мужской Сноуборд',
+      image: './assets/prod2.png'
     },
     {
       id: 3,
-      name: 'Phone Standard',
-      price: 299,
-      description: ''
+      name: 'LIB TECH',
+      price: 34392,
+      description: 'Мужской Сноуборд',
+      image: './assets/prod3.png'
+    },
+    {
+      id: 4,
+      name: 'LIB TECH',
+      price: 34392,
+      description: 'Мужской Сноуборд',
+      image: './assets/prod4.png'
     }
   ];

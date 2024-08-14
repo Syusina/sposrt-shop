@@ -1,0 +1,41 @@
+<div class="navigation-wrapper">
+  <div class="keen-slider keen-slider--vertical" #sliderRef>
+    <div class="keen-slider__slide number-slide1">
+      <p class="action">WINTER SALE -70%</p>
+    </div>
+    <div class="keen-slider__slide number-slide2">
+      <p class="action">WINTER SALE -70%</p>
+    </div>
+    <div class="keen-slider__slide number-slide3">
+      <p class="action">WINTER SALE -70%</p>
+    </div>
+  </div>
+  
+  <div class="button-left">
+    <svg
+      class="arrow"
+      (click)="slider.prev()"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+    </svg>
+  </div>
+
+  <div class="button-right">
+    <svg
+      class="arrow right"
+      (click)="slider.next()"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+    </svg>
+  </div>
+
+</div>
+<div class="dots">
+  <button
+    (click)="slider.moveToIdx(i)"
+    *ngFor="let slide of dotHelper; let i = index"
+    [class]="'dot ' + (i === currentSlide ? 'active' : '')"
+  ></button>
+</div>

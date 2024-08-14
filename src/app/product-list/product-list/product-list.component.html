@@ -1,29 +1,20 @@
-<h2>Products</h2>
-<div *ngFor="let product of products">
+<div class="container">
+  <div *ngFor="let product of products" class="card">
+    <div class="imgBox" [routerLink]="['/products', product.id]">
+      <img
+        class="photo"
+        [src]="product.image"
+        alt="photo"
+      />
+    </div>
 
-    <h3>
-        <a 
-          [title]="product.name + ' details'"
-          [routerLink]="['/products', product.id]"
-        >
-          {{ product.name }}
-        </a>
-    </h3>
-
-    <p *ngIf="product.description">
-        Description: {{ product.description }}
-    </p>
+    <p class="name" [routerLink]="['/products', product.id]">{{ product.name }}</p>
+    <p class="description" *ngIf="product.description">{{ product.description }}</p>
+    <p class="price">{{ product.price | currency }}</p>
 
     <div style="display: flex; gap: 10px; align-items: center;">
-        <button style="height: 25px;" type="button" (click)="share()">
-            Share
-        </button>
-
-        <app-product-alerts
-          [product]="product"
-          (notify)="onNotify()"
-        >
-        </app-product-alerts>
-        <button style="height: 25px;" type="button" (click)="addToCart(product)">Buy</button>
+      <button class="btn" style="height: 25px;" type="button" (click)="share()">В избранное</button>
+       <button class="btn btnToCart" style="height: 25px;" type="button" (click)="addToCart(product)">Купить</button>
     </div>
+  </div>
 </div>

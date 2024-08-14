@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.imgBox {
+  cursor: pointer;
+  display: flex;
+  width: 320px;
+  height: 370px;
+  align-items: center;
+  justify-content: center;
+  background: #F9F9F9;
+}
+
+.photo {
+  width: auto;
+  height: 270px;
+}
+
+.name {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #000;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #000;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #EB5757;
+  padding: 20px 25px;
+  background: none;
+  color: #EB5757;
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.btnToCart {
+  background: #EB5757;
+  color: #fff;
+}
