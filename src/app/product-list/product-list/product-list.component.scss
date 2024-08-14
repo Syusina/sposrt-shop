@@ -31,14 +31,21 @@
   background: none;
   border: 1px solid #cccccc;
   border-radius: 100%;
-  font-size: 35px;
+  font-size: 33px;
   color: #cccccc;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: #666666;
+    color: #fff;
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+  }
 }
 
 .like-active {
   background: #000;
   color: #F9F9F9;
-  border: 1px solid #000000;
 }
 
 .photo {
@@ -48,6 +55,10 @@
 
 .name {
   cursor: pointer;
+  width: 320px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
@@ -75,15 +86,27 @@
   text-align: center;
   border: 1px solid #EB5757;
   padding: 20px 25px;
-  width: 50%;
+  width: 45%;
   background: none;
   color: #EB5757;
   font-size: 16px;
   font-weight: 700;
   z-index: 10;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border: 1px solid #f7b4b4;
+    font-weight: 700;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+  }
 }
 
 .btnToCart {
   background: #EB5757;
   color: #fff;
+
+  &:hover {
+    background: #fc7373;
+  }
 }

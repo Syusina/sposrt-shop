@@ -37,6 +37,6 @@ export class SliderComponent {
   }
 
   ngOnDestroy() {
-    if (this.slider) this.slider.destroy()
+    if (this.slider) this.slider.destroy();
   }
 }

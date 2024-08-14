@@ -1,13 +1,13 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 15px 40px;
+  padding: 10px 40px;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 70%;
   gap: 15px;
 }

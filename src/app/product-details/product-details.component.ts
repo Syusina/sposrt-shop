@@ -10,6 +10,8 @@ import { CartService } from '../cart.service';
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product | undefined;
+  images = ['./assets/item/item1.png', './assets/item/item2.png', './assets/item/item3.png', './assets/item/item4.png', './assets/item/item5.png', './assets/item/item6.png']
+  mainImg = './assets/item/item1.png';
 
   constructor(
     private route: ActivatedRoute,
@@ -25,7 +27,11 @@ export class ProductDetailsComponent implements OnInit {
 
   addToCart(product: Product) {
     this.cartService.addToCard(product);
-    window.alert('Your product has been added to the cart!');
+    product.inCart = true;
+  }
+
+  choiseImg(img: string) {
+    this.mainImg = img;
   }
 
 }

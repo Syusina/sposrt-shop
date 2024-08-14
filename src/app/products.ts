@@ -12,7 +12,7 @@ export interface Product {
   export const products: Product[] = [
     {
       id: 1,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod1.png',
@@ -20,7 +20,7 @@ export interface Product {
     },
     {
       id: 2,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 17392,
       description: 'Мужской Сноуборд',
       image: './assets/prod2.png',
@@ -28,7 +28,7 @@ export interface Product {
     },
     {
       id: 3,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod3.png',
@@ -36,7 +36,7 @@ export interface Product {
     },
     {
       id: 4,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod4.png',
@@ -44,7 +44,7 @@ export interface Product {
     },
     {
       id: 5,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod3.png',
@@ -52,7 +52,7 @@ export interface Product {
     },
     {
       id: 6,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod4.png',
@@ -60,7 +60,7 @@ export interface Product {
     },
     {
       id: 7,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod4.png',
@@ -68,7 +68,7 @@ export interface Product {
     },
     {
       id: 8,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod4.png',
@@ -76,7 +76,7 @@ export interface Product {
     },
     {
       id: 9,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod4.png',
@@ -84,7 +84,7 @@ export interface Product {
     },
     {
       id: 10,
-      name: 'LIB TECH',
+      name: 'Сноуборд GNU Asym Carbon Credit Btx Multicolor',
       price: 34392,
       description: 'Мужской Сноуборд',
       image: './assets/prod4.png',

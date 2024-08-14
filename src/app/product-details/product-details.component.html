@@ -1,8 +1,42 @@
-<h2>Product Details</h2>
+<div class="wrapper">
+  <div class="card" *ngIf="product">
+    <div class="imagesBox">
+      <div class="imagesLittleAll">
+        <div class="imgBox" *ngFor="let img of images">
+          <img class="imageLittle" [src]="img" (click)="choiseImg(img)"/>
+        </div>
+      </div>
+      <div class="mainImg">
+        <img class="image" [src]="mainImg" alt="image"/>
+      </div>
+    </div>
+    
+    <div class="info">
+      <p class="article">Артикул производителя: 19SN003</p>
+      <div class="title">
+        <img src="./assets/brand.png" alt="brand"/>
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="review">24 отзыва</p>
+      </div>
+      <h3 class="name">{{ product.name }}</h3>
+      <h4 class="price">{{ product.price | currency }}</h4>
 
-<div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
-  <button type="button" (click)="addToCart(product)">Buy</button>
+      <div class="buttons">
+        <button *ngIf="!product.inCart" class="btn btnBasket" type="button" (click)="addToCart(product)">Купить</button>
+        <button *ngIf="product.inCart" class="btn btnBasket" type="button" [routerLink]="['/cart']">В корзину</button>
+
+        <button class="btn btnLike" type="button" (click)="addToCart(product)">Добавить в избранное</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="content">
+    <p style="font-size: 21px; font-weight: 500; color: black;">Характеристики</p>
+    <p>The Old Skool has never been lacking in attitude. It brought the dawn of the classic Vans side stripe that has developed into a status symbol of tradition and skate stature. Aside from all that personality, they have lasted as long as they have because of their ability to perform on a skateboard, and to last, and last. Though they now share the ranks with many new Vans styles with their own innovations, the Old Skools aren't going anywhere.
+    </p>
+    <div class="itemImages">
+      <img class="itemImg" src="./assets/item/img1.png"/>
+      <img class="itemImg" src="./assets/item/img2.png"/>
+    </div>
+  </div>
 </div>

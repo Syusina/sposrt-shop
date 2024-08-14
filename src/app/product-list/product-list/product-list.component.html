@@ -16,7 +16,7 @@
     <p class="description" *ngIf="product.description">{{ product.description }}</p>
     <p class="price">{{ product.price | currency }}</p>
 
-    <div style="display: flex; gap: 10px; align-items: center;">
+    <div style="display: flex; justify-content: space-between; gap: 10px; align-items: center;">
         <button class="btn" style="height: 25px;" type="button" [routerLink]="['/products', product.id]">Подробнее</button>
         <button *ngIf="!product.inCart" class="btn btnToCart" style="height: 25px;" type="button" (click)="addToCart(product)">Купить</button>
         <button *ngIf="product.inCart" class="btn btnToCart" style="height: 25px;" type="button" [routerLink]="['/cart']" >В корзину</button>

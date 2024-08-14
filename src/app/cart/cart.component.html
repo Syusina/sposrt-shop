@@ -1,7 +1,7 @@
-<h3 style="margin-left: 40px; margin-top: 25px;">Корзина</h3>
+<h2 style="margin-left: 40px; margin-top: 35px;">Корзина</h2>
 <div class="wrapper">
-
-  <div class="cards">
+  <p style="width: 70%;" *ngIf="!getAllItems()">Пока здесь пусто...</p>
+  <div class="cards" *ngIf="getAllItems()">
     <div class="cart-item" *ngFor="let item of getCartItems()">
       <div class="imgBox">
         <img class="image" [src]="item.image" />
