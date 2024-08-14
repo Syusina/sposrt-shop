@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="btnBox">
+    <a class="link" [routerLink]="['/']" *ngFor="let cat of leftCat">{{ cat }}</a>
+  </div>
+
+  <div>
+    <a [routerLink]="['/']"><img  style="height: 50px;" src="./assets/logo.png" /></a>
+  </div>
+    
+  <div class="btnBox">
+    <a class="link" routerLink="/">Войти</a>
+    <a class="link" routerLink="/">Избранное</a>
+    <a class="link" routerLink="/cart">Корзина</a>
+    <a class="link" routerLink="/">Поиск</a>
+  </div>
+</div>
