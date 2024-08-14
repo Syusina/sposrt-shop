@@ -11,12 +11,12 @@ export class ProductListComponent {
   constructor(private cartService: CartService) {}
   products = products;
 
-  share() {
-    window.alert('Товар добавлен в избранное!');
+  like(product: Product) {
+    product.like = !product.like;
   }
 
   addToCart(product: Product) {
     this.cartService.addToCard(product);
-    window.alert('Добавлен в корзину!');
+    product.inCart = true;
   }
 }

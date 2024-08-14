@@ -1,13 +1,15 @@
 .container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 100px;
   margin: 25px 0;
 }
 
 .imgBox {
+  position: relative;
   cursor: pointer;
   display: flex;
   width: 320px;
@@ -15,6 +17,28 @@
   align-items: center;
   justify-content: center;
   background: #F9F9F9;
+}
+
+.like {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid #cccccc;
+  border-radius: 100%;
+  font-size: 35px;
+  color: #cccccc;
+}
+
+.like-active {
+  background: #000;
+  color: #F9F9F9;
+  border: 1px solid #000000;
 }
 
 .photo {
@@ -51,6 +75,7 @@
   text-align: center;
   border: 1px solid #EB5757;
   padding: 20px 25px;
+  width: 50%;
   background: none;
   color: #EB5757;
   font-size: 16px;

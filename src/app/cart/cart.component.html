@@ -1,6 +1,41 @@
-<h3>Cart</h3>
+<h3 style="margin-left: 40px; margin-top: 25px;">Корзина</h3>
+<div class="wrapper">
 
-<div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
+  <div class="cards">
+    <div class="cart-item" *ngFor="let item of getCartItems()">
+      <div class="imgBox">
+        <img class="image" [src]="item.image" />
+      </div>
+      
+      <div class="descBox">
+        <span>{{ item.name }}</span>
+        <span>{{ item.price | currency }}</span>
+      </div>
+      
+      <div class="btnBox">
+        <button class="cardBtn" (click)="deleteFromCart(item)">-</button>
+        <p>{{ getProductCount(item.id)}}</p>
+        <button class="cardBtn" (click)="addToCart(item)">+</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="info">
+    <p style="font-size: 18px; font-weight: 700; margin-bottom: 35px;">Общая информация</p>
+    
+    <div class="info-cell">
+      <p>Количество:</p>
+      <p> {{ getAllItems() }} шт.</p>
+    </div>
+    
+    <div class="info-cell">
+      <p>Итого:</p>
+      <p>{{ getAllPrice() | currency }}</p>
+    </div>
+
+    <button [ngClass]="getAllItems() > 0 ? 'btn active' : 'btn disabled'">Оформить заказ</button>
+
+  </div>
+
 </div>

@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  gap: 15px;
+}
+
+.descBox {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: max-content;
+  padding: 25px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.info-cell {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.active {
+  background: #EB5757;
+  border: 1px solid #EB5757;
+}
+
+.disabled {
+  cursor: default;
+  background: #b6b6b6;
+  border: 1px solid #b6b6b6;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 25px;
+}
+
+.imgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+}
+
+.image {
+  width: auto;
+  height: 150px;
+}
+
+.btnBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.cardBtn {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+} 
